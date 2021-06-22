@@ -12,11 +12,11 @@ libraries{
             docker_args = "-v /tmp/.m2:/root/.m2 -v /tmp/.sonar:/root/.sonar"
         }
     }
-    sonarqube{
+    /*sonarqube{
         merge=true
         installation_name ='SonarQubeServer'
         credential_id     ='sonarqube'
-    }
+    }*/
     nexus_sonatype{
         credential_id   = "nexus"
         nexusVersion    = "nexus3"
